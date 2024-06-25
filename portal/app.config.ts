@@ -2,9 +2,9 @@ import { defineConfig } from "@solidjs/start/config";
 
 export default defineConfig({
     vite: {
-        base: "/bookwatch"
+        base: "/localchat"
     },
     server: {
-        baseURL: "/bookwatch",
+        baseURL: "/localchat",
     }
 });
