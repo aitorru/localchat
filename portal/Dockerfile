@@ -1,9 +1,6 @@
 FROM oven/bun:slim
 
-COPY package.json ./
-COPY bun.lockb ./
-COPY src ./src
-COPY public ./public
+COPY . .
 
-RUN bun install 
+RUN bun install && bun run build
 CMD [ "bun", "run", "start" ]

@@ -5,4 +5,4 @@ COPY go.* .
 
 RUN go mod download
 
-CMD [ "go", "run" "src/main.go" ]
+CMD [ "go", "run", "src/main.go" ]
