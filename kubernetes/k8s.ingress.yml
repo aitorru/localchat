@@ -9,13 +9,6 @@ spec:
   - host: sonic.tail0edab.ts.net
     http:
       paths:
-      - path: /localchat
-        pathType: Prefix
-        backend:
-          service:
-            name: front
-            port:
-              number: 3000
       - path: /localchat/ws
         pathType: Exact
         backend:
@@ -23,16 +16,17 @@ spec:
             name: back
             port:
               number: 3001
+      - path: /localchat
+        pathType: Prefix
+        backend:
+          service:
+            name: front
+            port:
+              number: 3000
+      
   - host: sonic.local
     http:
       paths:
-      - path: /localchat
-        pathType: Prefix
-        backend:
-          service:
-            name: front
-            port:
-              number: 3000
       - path: /localchat/ws
         pathType: Exact
         backend:
@@ -40,3 +34,11 @@ spec:
             name: back
             port:
               number: 3001
+      - path: /localchat
+        pathType: Prefix
+        backend:
+          service:
+            name: front
+            port:
+              number: 3000
+      
