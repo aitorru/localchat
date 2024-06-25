@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: back
-        image: ghcr.io/aitorru/localchat-back:9668748778
+        image: ghcr.io/aitorru/localchat-back:9668922693
         ports:
         - containerPort: 3001
