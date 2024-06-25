@@ -1,4 +1,4 @@
-import { Message } from "~/routes";
+import { Message } from "~/routes/localchat";
 
 export default function SelfMessage(context: { msg: Message }) {
     return (

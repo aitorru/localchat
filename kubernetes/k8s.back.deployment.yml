@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: localchat-back
+spec:
+  serviceName: "back"
+  replicas: 1
+  selector:
+    matchLabels:
+      app: back
+  template:
+    metadata:
+      labels:
+        app: back
+    spec:
+      containers:
+      - name: back
+        image: ghcr.io/aitorru/bookwatch-back-2d351de944110f6f273366490892630b40746520:trunk
+        ports:
+        - containerPort: 3001
