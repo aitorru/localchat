@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: front
-        image: ghcr.io/aitorru/bookwatch-back-2d351de944110f6f273366490892630b40746520:trunk
+        image: ghcr.io/aitorru/localchat-front:9668748779
         ports:
         - containerPort: 3001
