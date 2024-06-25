@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: front
-        image: ghcr.io/aitorru/localchat-front:9668922698
+        image: ghcr.io/aitorru/localchat-front:9669062729
         ports:
         - containerPort: 3001
