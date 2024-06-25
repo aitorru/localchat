@@ -9,7 +9,7 @@ spec:
   - host: sonic.tail0edab.ts.net
     http:
       paths:
-      - path: /localchat/ws
+      - path: /chatter
         pathType: Exact
         backend:
           service:
@@ -27,7 +27,7 @@ spec:
   - host: sonic.local
     http:
       paths:
-      - path: /localchat/ws
+      - path: /chatter
         pathType: Exact
         backend:
           service:

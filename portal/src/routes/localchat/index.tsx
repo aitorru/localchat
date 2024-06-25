@@ -14,7 +14,7 @@ export default function Home() {
   const [socket, setSocket] = createSignal<WebSocket | null>(null);
 
   const connectToServer = async () => {
-    const ws = new WebSocket("/localchat/ws");
+    const ws = new WebSocket("/chatter");
     console.log("Connecting to server...")
 
     ws.onopen = () => {

@@ -27,7 +27,7 @@ func main() {
 	clientsMutex.Unlock()
 
 	// Upgraded websocket request
-	app.Get("/localchat/ws", websocket.New(func(c *websocket.Conn) {
+	app.Get("/chatter", websocket.New(func(c *websocket.Conn) {
 
 		defer func() {
 			clientsMutex.Lock()
